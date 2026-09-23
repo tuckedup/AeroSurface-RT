@@ -1,0 +1,12 @@
+<?xml version="1.0"?>
+<package format="3">
+  <name>aerosurface_perception</name><version>0.1.0</version>
+  <description>C++ ONNX surface segmentation and conservative image-space regions</description>
+  <maintainer email="maintainers@example.invalid">AeroSurface contributors</maintainer>
+  <license>MIT</license>
+  <buildtool_depend>ament_cmake</buildtool_depend>
+  <depend>rclcpp</depend><depend>sensor_msgs</depend><depend>diagnostic_msgs</depend>
+  <exec_depend>rclpy</exec_depend><exec_depend>python3-pil</exec_depend>
+  <exec_depend>launch</exec_depend><exec_depend>launch_ros</exec_depend>
+  <export><build_type>ament_cmake</build_type></export>
+</package>

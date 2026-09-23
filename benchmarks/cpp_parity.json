@@ -1,0 +1,7 @@
+{
+  "mask": "EXACT_MATCH",
+  "sandable": "EXACT_MATCH",
+  "avoid": "EXACT_MATCH",
+  "defect": "EXACT_MATCH",
+  "protected": "EXACT_MATCH"
+}

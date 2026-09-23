@@ -1,0 +1,12 @@
+{
+  "numpy": "2.2.2",
+  "Pillow": "11.1.0",
+  "onnx": "1.16.2",
+  "onnxruntime-gpu": "1.19.2",
+  "psutil": "7.0.0",
+  "tensorrt": "11.2.1.2",
+  "pytest": "9.1.1",
+  "ruff": "0.16.6",
+  "torch_imported_runtime": "2.5.1+cu118",
+  "note": "Final runtime: local CUDA Torch and NumPy wheels; initial measured CUDA runtime was Torch 2.5.1 before shared-environment drift."
+}

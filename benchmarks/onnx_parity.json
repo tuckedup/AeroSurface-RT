@@ -1,0 +1,8 @@
+{
+  "passed": true,
+  "samples": 12,
+  "max_absolute_error": 0.00042724609375,
+  "mean_argmax_agreement": 1.0,
+  "rtol": 0.0002,
+  "atol": 0.0001
+}

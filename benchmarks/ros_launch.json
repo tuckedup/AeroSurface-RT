@@ -1,0 +1,6 @@
+{
+  "status": "PASS",
+  "overlay_frames": 20,
+  "OK_diagnostics": true,
+  "launch": "aerosurface_perception demo.launch.py"
+}

@@ -1,0 +1,1 @@
+{"seed": 42, "width": 160, "height": 128, "base_channels": 12, "batch_size": 8, "epochs": 12, "learning_rate": 0.003, "train_samples": 192, "val_samples": 40, "test_samples": 64, "threads": 2, "amp": true, "confidence": 0.65, "margin": 3}

@@ -1,0 +1,23 @@
+[build-system]
+requires = ["setuptools>=68"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "aerosurface-rt"
+version = "0.1.0"
+description = "Robotic surface segmentation research and C++ deployment"
+requires-python = ">=3.10"
+dependencies = ["numpy>=1.24,<3", "Pillow>=10", "torch>=2.5,<3", "onnx>=1.16,<2", "onnxruntime>=1.19,<2", "psutil>=5.9"]
+
+[project.optional-dependencies]
+dev = ["pytest>=8", "ruff>=0.9"]
+
+[tool.setuptools.packages.find]
+include = ["aerosurface*", "simulation*", "training*"]
+
+[tool.ruff]
+line-length = 100
+extend-exclude = [".venv", "artifacts", "build", "data", "models", "third_party"]
+
+[tool.pytest.ini_options]
+testpaths = ["tests"]

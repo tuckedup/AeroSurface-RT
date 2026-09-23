@@ -1,0 +1,17 @@
+FROM ros:jazzy-ros-base
+SHELL ["/bin/bash", "-c"]
+RUN apt-get update && apt-get install -y --no-install-recommends \
+    build-essential cmake python3-pil python3-colcon-common-extensions \
+    ros-jazzy-diagnostic-msgs ros-jazzy-sensor-msgs && rm -rf /var/lib/apt/lists/*
+WORKDIR /workspace
+COPY scripts/fetch_ort.py scripts/fetch_ort.py
+RUN python3 scripts/fetch_ort.py
+COPY cpp cpp
+COPY ros2_ws ros2_ws
+RUN source /opt/ros/jazzy/setup.bash && cd ros2_ws && colcon build \
+    --cmake-args -DONNXRUNTIME_ROOT=/workspace/third_party/onnxruntime-linux-x64-1.19.2
+ENV LD_LIBRARY_PATH=/workspace/third_party/onnxruntime-linux-x64-1.19.2/lib
+COPY docker/ros_entrypoint.sh /ros_entrypoint_aerosurface.sh
+RUN chmod +x /ros_entrypoint_aerosurface.sh
+ENTRYPOINT ["/ros_entrypoint_aerosurface.sh"]
+CMD ["ros2", "launch", "aerosurface_perception", "demo.launch.py", "model:=/workspace/models/edge/model.onnx", "images:=/workspace/data/procedural"]

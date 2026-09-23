@@ -1,0 +1,11 @@
+{
+  "status": "PASS",
+  "deliverable_files": 91,
+  "deliverable_bytes": 932950,
+  "checks": [
+    "no weights/engines/dataset archives tracked",
+    "no files above 2 MB",
+    "relative Markdown links resolve",
+    "generated directories ignored"
+  ]
+}

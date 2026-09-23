@@ -1,0 +1,11 @@
+# Python 3.10. Install torch from the cu118 index separately for the measured GPU path.
+torch==2.5.1
+numpy==2.2.2
+Pillow==11.1.0
+onnx==1.16.2
+onnxruntime-gpu==1.19.2
+psutil==7.0.0
+pytest==9.1.1
+ruff==0.16.6
+# Optional measured Windows GPU engine builder/runtime: tensorrt==11.2.1.2
+# See docs/reproducibility.md for distinct CUDA/driver requirements.
