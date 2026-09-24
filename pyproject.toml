@@ -17,7 +17,7 @@ include = ["aerosurface*", "simulation*", "training*"]
 
 [tool.ruff]
 line-length = 100
-extend-exclude = [".venv", "artifacts", "build", "data", "models", "third_party"]
+extend-exclude = [".venv", ".venv_isaac", "artifacts", "build", "data", "models", "third_party"]
 
 [tool.pytest.ini_options]
 testpaths = ["tests"]

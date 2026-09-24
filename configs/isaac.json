@@ -1,1 +1,1 @@
-{"seed": 42, "frames": 12, "width": 640, "height": 512, "rt_subframes": 8, "headless": true, "output": "data/isaac_raw"}
+{"seed": 42, "layouts": 150, "views_per_layout": 4, "width": 640, "height": 512, "rt_subframes": 8, "headless": true, "output": "data/isaac_render"}
